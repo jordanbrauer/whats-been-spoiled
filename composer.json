@@ -1,0 +1,17 @@
+{
+  "name": "jorb/whatsbeenspoiled.dev",
+  "description": "A simple, lightweight, right to the point Magic: the Gathering spoiler website.",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "jordanbrauer",
+      "email": "jbrauer.inc@gmail.com"
+    }
+  ],
+  "require": {
+    "FortAwesome/Font-Awesome": "^4.7",
+    "zurb/foundation": "^6.2",
+    "craft-cli/cli": "^0.8.0"
+  }
+}

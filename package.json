@@ -1,0 +1,17 @@
+{
+  "name": "whatsbeenspoiled.dev",
+  "version": "0.0.1",
+  "description": "A simple, lightweight, right to the point Magic: the Gathering spoiler website.",
+  "main": "public/index.php",
+  "repository": {
+    "url": "https://github.com/jordanbrauer/whats-been-spoiled",
+    "type": "git"
+  },
+  "author": "jordanbrauer <jbrauer.inc@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "keyrune": "^1.7.1",
+    "mana-font": "^1.2.0"
+  }
+}
