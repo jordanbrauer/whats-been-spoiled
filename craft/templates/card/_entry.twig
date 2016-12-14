@@ -1,0 +1,22 @@
+{# use the layout _layout #}
+{% extends "_layout" %}
+
+{# twig content block #}
+{% block content %}
+	<article>
+    {# Entry title #}
+		<h1>{{ entry.title }}</h1>
+    {# Entry post date #}
+		<p>Posted on {{ entry.postDate.format('F d, Y') }}</p>
+
+    {# Entry body #}
+		{{ entry.body }}
+
+    {# NOTE: testing card attrbite variables #}
+    {{ entry.cardSet }}
+    <br>
+    {{ entry.cardName }}
+    <br>
+    {{ entry.cardSupertype }} &ndash; {{ entry.cardSubtype }}
+	</article>
+{% endblock %}
