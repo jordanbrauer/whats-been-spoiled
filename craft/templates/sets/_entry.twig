@@ -1,0 +1,40 @@
+{# use the layout _layout #}
+{% extends "_layout" %}
+
+{# twig content block #}
+{% block content %}
+	<article>
+    {# Entry title #}
+		<h1>{{ entry.title }}</h1>
+    {# Entry post date #}
+		<p>Posted on {{ entry.postDate.format('F d, Y') }}</p>
+
+    {# Entry body #}
+		<!-- {{ entry.body }} -->
+
+    {# NOTE: testing card attrbite variables #}
+    {{ entry.setName }}
+    <br>
+    {{ entry.setSize }}
+    <br>
+    {{ entry.setThemesAndMechanics }}
+    <br>
+    {{ entry.setArtDirector }}
+    <br>
+    {{ entry.setDesignTeam }}
+    <br>
+    {{ entry.setDevelopmentTeam }}
+    <br>
+    {{ entry.setExpansionCode }}
+    <br>
+    {{ entry.setKeywordsAndAbilities }}
+    <br>
+    {{ entry.setReleaseDate }}
+
+    {#
+    {{ entry.setSymbol }}
+    {{ entry.setImage }}
+    #}
+
+	</article>
+{% endblock %}

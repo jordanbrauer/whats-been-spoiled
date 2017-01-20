@@ -1,0 +1,20 @@
+{# use the layout _layout #}
+{% extends "_layout" %}
+
+{# Set the page title #}
+{% set title = "Sets" %}
+
+{# Twig content block #}
+{% block content %}
+	<h1>Sets</h1>
+
+  {# loop through Craft entries in the section 'card' and display them. #}
+	{% for entry in craft.entries.section('sets').find() %}
+		<article>
+			<h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
+			<p>Posted on {{ entry.postDate.format('F d, Y') }}</p>
+      {{ entry.cardName }}
+			<p><a href="{{ entry.url }}">View card</a></p>
+		</article>
+	{% endfor %}
+{% endblock %}
