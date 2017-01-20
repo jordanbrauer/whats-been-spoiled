@@ -10,7 +10,7 @@
 		<p>Posted on {{ entry.postDate.format('F d, Y') }}</p>
 
     {# Entry body #}
-		{{ entry.body }}
+		<!-- {{ entry.body }} -->
 
     {# NOTE: testing card attrbite variables #}
     {{ entry.cardSet }}
@@ -18,5 +18,30 @@
     {{ entry.cardName }}
     <br>
     {{ entry.cardSupertype }} &ndash; {{ entry.cardSubtype }}
+    <br>
+    {{ entry.cardRulesText }}
+    <br>
+    {{ entry.cardFlavorText }}
+    <br>
+    {{ entry.cardArtist }}
+    <br>
+    {{ entry.cardColorIdentity }}
+    <br>
+    {{ entry.cardCmc }}
+    <br>
+    {{ entry.cardManaCost }}
+    <br>
+    {{ entry.cardLoyalty }}
+    <br>
+    {{ entry.cardPower }}
+    <br>
+    {{ entry.cardToughness }}
+    <br>
+    {{ entry.cardRarity }}
+
+    {#
+    {{ entry.cardColor }}
+    {{ entry.cardImage }}
+    #}
 	</article>
 {% endblock %}

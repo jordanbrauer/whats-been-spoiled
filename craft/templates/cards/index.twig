@@ -9,7 +9,7 @@
 	<h1>Cards</h1>
 
   {# loop through Craft entries in the section 'card' and display them. #}
-	{% for entry in craft.entries.section('card').find() %}
+	{% for entry in craft.entries.section('cards').find() %}
 		<article>
 			<h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
 			<p>Posted on {{ entry.postDate.format('F d, Y') }}</p>
