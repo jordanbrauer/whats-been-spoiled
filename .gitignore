@@ -12,14 +12,18 @@ vendor/
 
 ### CraftCMS ###
 # Craft Storage (cache) [http://buildwithcraft.com/help/craft-storage-gitignore]
+craft/app/
+
 craft/config/db.php
 craft/config/license.key
 
+craft/plugins/
+
 craft/storage/
-!/craft/storage/logo/*
 #craft/storage/backups
 #craft/storage/runtime
 #craft/storage/userphotos
+!/craft/storage/logo/*
 
 
 ### Node ###
