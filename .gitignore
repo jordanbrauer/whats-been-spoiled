@@ -1,5 +1,6 @@
 ### Project Files ###
 *.old
+backups
 
 ### Composer ###
 composer.phar
